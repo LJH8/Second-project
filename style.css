@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  width: auto;
+  background-color: rgba(47, 121, 206, 0.521);
+  display: flex;
+  justify-content: center;
+}
+.To-do-list {
+  margin-top: 100px;
+  background-color: rgb(236, 252, 195);
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+
+.title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.input-content {
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+#input-text {
+  border: 1px solid grey;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  height: 20px;
+  padding-left: 5px;
+}
+
+.input-content button {
+  border: none;
+  font-size: 20px;
+  background: none;
+}
+
+.list ul {
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+li i {
+  margin: 0;
+  padding-top: 2px;
+  opacity: 0;
+  color: red;
+  padding-right: 5px;
+}
+
+li:hover i {
+  opacity: 1;
+  cursor: pointer;
+}
+
+li i:hover {
+  color: rgb(248, 131, 131);
+}
+
+#check {
+  text-decoration: line-through;
+  background-color: gray;
+}
+
+@media screen and (min-width: 769px) {
+  .To-do-list {
+    width: 600px;
+  }
+
+  .title {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  .input-content {
+    margin-top: 15px;
+  }
+
+  #input-text {
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .input-content button {
+    font-size: 30px;
+    margin-left: 15px;
+  }
+
+  .list {
+    font-size: 30px;
+  }
+
+  .list i {
+    padding-top: 4px;
+  }
+
+  li {
+    font-size: 25px;
+  }
+}
